@@ -8,5 +8,9 @@
         "host": "student-sign-in-database-server-berit.database.windows.net",
         "database": "student-sign-in-database",
         "dialect": "mssql"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     }
 }
