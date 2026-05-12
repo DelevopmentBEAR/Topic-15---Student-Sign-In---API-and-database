@@ -12,8 +12,11 @@ const createStudentsModel = require('./student.js');
 // if there is not NODE_ENV environment variable, then default to "development"
 const env = process.env.NODE_ENV || 'development';
 
+const dvPassword = process.env.DV_PASSWORD; // read the value of the DV_PASSWORD environment variable (which should be set to your database password)
+
 // Get the database configuration for the current environment (development, production, etc.)
 const config = configJson[env]; // read the configuration object for 'development' or 'production' from config.json
+config.password = dvPassword; // set the password in the configuration object to the value of the DV_PASSWORD environment variable
 
 // Create a new Sequelize instance using the database configuration
 const sequelize = new Sequelize(config);
