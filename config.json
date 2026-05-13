@@ -7,7 +7,11 @@
         "username": "berit",
         "host": "student-sign-in-database-server-berit.database.windows.net",
         "database": "student-sign-in-database",
-        "dialect": "mssql"
+        "dialect": "mssql",
+        "dialectOptions": { "options": {
+            "encrypt": true,
+            "trustServerCertificate": false
+        }}
     },
     "scripts": {
         "start": "node server.js",
