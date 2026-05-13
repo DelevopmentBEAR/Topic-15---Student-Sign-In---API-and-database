@@ -8,7 +8,8 @@
         "host": "student-sign-in-database-server-berit.database.windows.net",
         "database": "student-sign-in-database",
         "dialect": "mssql",
-        "dialectOptions": { "options": {
+        "dialectOptions": { 
+            "options": {
             "encrypt": true,
             "trustServerCertificate": false
         }}
